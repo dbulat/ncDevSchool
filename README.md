@@ -8,6 +8,6 @@ Maven https://maven.apache.org/download.cgi
 Git https://git-scm.com/downloads or https://git-for-windows.github.io/
 
 Clone the repository:
-git clone https://github.com/ATPod/nc-training.git
+git clone https://github.com/dbulat/ncDevSchool.git
 Change directory to nc-training directory:
 cd nc-training
