@@ -2,19 +2,15 @@ package by.training.nc.dev1.common.entity.user;
 
 import by.training.nc.dev1.common.entity.AbstractEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by dmbu0616 on 4/3/2017.
  */
 @Entity
+@Inheritance
 @Table(name = "users")
-public class User {
-    @Id
-    private Long id;
+public class User extends AbstractEntity{
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "last_name")
@@ -25,14 +21,6 @@ public class User {
     private String password;
 //    @Column(name = "user_role")
 //    private UserRole userRole;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
